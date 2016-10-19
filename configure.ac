@@ -261,7 +261,7 @@ AC_ARG_WITH(dags,
 	AS_HELP_STRING([--with-dags],[build for dags, yes or no]),
 	[dags=$withval],[dags=no])
 if test "$dags" = "yes"; then
-	AC_DEFINE([XSARIUS],[1],[build for dags, yes or no ])
+	AC_DEFINE([DAGS],[1],[build for dags, yes or no ])
 fi
 
 DTS_LIBS="-ldca $LIBM"
